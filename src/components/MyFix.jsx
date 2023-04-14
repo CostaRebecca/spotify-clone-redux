@@ -26,7 +26,7 @@ const MyFix = () => {
                     <Button variant="outline-success" type="submit">Search</Button>
                 </Form>
             </nav>
-            <div className='d-flex flex-column sticky-bottom'>
+            <div className='d-flex flex-column sticky-bottom' >
                 <Button variant="light" type="submit">Sign up</Button>
                 <Button variant="dark" type="submit">Login</Button>
                 <ul className="navbar-nav text-light">
