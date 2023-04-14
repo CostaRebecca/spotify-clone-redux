@@ -73,20 +73,25 @@ const MyAlbum = () => {
     }, []);
 
     return (
-        <div>
-         <h1>My album</h1>
+        <div style={{ zIndex: 0 }}>
+            <h2>My album</h2>
             <Row className="p-0 m-0">
                 {albums.map((album, index) => (
                     <Col sm={3} key={index}>
-                        <Card>
+                        
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={album.album.cover_medium} />
                             <Card.Body>
                                 <Card.Title>{album.title}</Card.Title>
-                                <Card.Subtitle>{album.summary}</Card.Subtitle>
+                                <Card.Text>
+                                {album.summary}
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                 ))};
-            </Row> 
+            </Row>
+
         </div>
     );
 

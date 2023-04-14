@@ -6,7 +6,7 @@ const MyNavBottom = () => {
 
 
         <Container>
-            <Nav className="justify-content-center fixed-bottom" activeKey="/home" style={{ zIndex: 0 }}>
+            <Nav className="justify-content-center fixed-bottom bg-black opacity-75" activeKey="/home" style={{ zIndex: 0 }}>
             <Nav.Item>
                     <Nav.Link href="/home">Active</Nav.Link>
                 </Nav.Item>
